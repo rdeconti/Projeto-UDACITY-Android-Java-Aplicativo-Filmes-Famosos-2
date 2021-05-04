@@ -6,3 +6,7 @@
 
 Projeto desenvolvido durante o curso da UDACITY para Incrementar o aplicativo de Filmes Famosos que extrai dados da API do IMDB (The Movie Database) implementando a base de dados SQLite, um provedor de conteúdo e utilizar métodos de persistência de dados.
 
+# Proposta
+
+<img align="center" alt="GIF" src="https://github.com/rdeconti/Projeto-UDACITY-Android-Java-Aplicativo-Filmes-Famosos-2/blob/main/findMovie2.png" />
+
