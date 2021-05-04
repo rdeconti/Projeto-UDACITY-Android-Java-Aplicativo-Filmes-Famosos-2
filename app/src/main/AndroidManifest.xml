@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.rosemeire.deconti.findmovies"
+    tools:ignore="GoogleAppIndexingWarning">
+
+    <!-- Allow application perform a network request -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Allow application check network connectivity -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- android:launchMode="singleTask - This parameter allow "onSaveInstanceState" works without problems -->
+
+    <application
+
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:icon="@drawable/svg_launcher_findmovies_black"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <service
+            android:name=".Service.ServiceMovie"
+            tools:ignore="InnerclassSeparator" />
+
+        <service
+            android:name=".Service.ServiceTrailer"
+            tools:ignore="InnerclassSeparator" />
+
+        <service
+            android:name=".Service.ServiceReview"
+            tools:ignore="InnerclassSeparator" />
+
+        <provider
+            android:name=".Data.MovieProvider"
+            android:authorities="@string/content_authority"
+            android:exported="false"
+            android:syncable="true"
+            tools:ignore="InnerclassSeparator" />
+
+        <activity
+            android:name=".UserInterface.MovieSplash"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".UserInterface.MovieReport"
+            android:launchMode="singleTask">
+            tools:ignore="InnerclassSeparator">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".UserInterface.MovieDetail"
+            android:label="@string/label_movie_detail"
+            android:parentActivityName=".UserInterface.MovieReport"
+            android:theme="@style/AppTheme"
+            android:launchMode="singleTop"
+            tools:ignore="InnerclassSeparator">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".UserInterface.MovieReport" />
+        </activity>
+
+        <activity
+            android:name=".PreferredSettings.PreferredActivitySettings"
+            android:label="@string/label_settings"
+            android:parentActivityName=".UserInterface.MovieReport"
+            tools:ignore="InnerclassSeparator" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".UserInterface.MovieReport" />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".UserInterface.MovieDetail">
+
+    <item
+        android:id="@+id/menu_detail_favorite"
+        android:icon="@drawable/ic_favorite_on_white_24dp"
+        android:title="@string/label_settings"
+        app:showAsAction="always"
+        tools:ignore="AlwaysShowAction">
+    </item>
+
+    <item
+        android:id="@+id/menu_detail_share"
+        android:icon="@drawable/ic_share_white_24dp"
+        android:title="@string/label_share"
+        app:showAsAction="always">
+    </item>
+
+</menu>

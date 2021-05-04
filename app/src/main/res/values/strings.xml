@@ -1,0 +1,60 @@
+<resources xmlns:xliff="http://schemas.android.com/apk/res-auto">
+
+    <!-- App -->
+    <string name="app_name" translatable="false">Find Movies</string>
+
+    <!-- Contract definitions -->
+    <string name="content_authority" translatable="false">com.rosemeire.deconti.findmovies</string>
+
+    <!-- Users Messages -->
+    <string name="msg_application_network_connection_fail">There is no network connection, try again later.</string>
+
+    <string name="msg_movie_favorite_deleted">"Movie deleted from your favorite report</string>
+    <string name="msg_movie_favorite_included">"Movie included in your favorite report</string>
+    <string name="msg_movie_shared">"Movie shared"</string>
+    <string name="msg_without_reviews">Without movie reviews</string>
+    <string name="msg_without_trailers">Without movie trailers</string>
+    <string name="msg_without_favorites">Without movie favorites</string>
+
+    <!-- Technical messages -->
+    <string name="msg_error_0" translatable="false">Missing API key (field THE_MOVIE_DB_API_KEY_FROM_USER is empty !)"</string>
+    <string name="msg_error_10" translatable="false">Unknow uri: </string>
+
+    <!-- Labels modelMovie summary  -->
+    <string name="label_summary">Summary</string>
+    <string name="label_rating">Rating</string>
+    <string name="label_name">Name</string>
+    <string name="label_release_date">Release date</string>
+    <string name="label_trailers">Trailers</string>
+    <string name="label_reviews">Reviews</string>
+    <string name="label_movie_detail">Movie detail</string>
+    <string name="label_classification">Classification</string>
+    <string name="label_share">Share</string>
+    <string name="label_share_link">Share link using</string>
+    <string name="label_settings">Settings</string>
+
+    <!-- Special label to rating movie  -->
+    <string name="rating_movie">Rating: <xliff:g id="rating"> %.1f</xliff:g>/10 ( <xliff:g id="vote_count"> %d </xliff:g> )</string>
+
+    <!-- Labels application menu_main -->
+    <string name="label_poweredBy" translatable="false">Powered by TheMovieDb</string>
+
+    <!-- Content description -->
+    <string name="content_description_image_poster" translatable="false">Image Poster</string>
+    <string name="content_description_image_splash" translatable="false">Image Splash</string>
+    <string name="content_description_image_trailer" translatable="false">Image Trailer</string>
+
+    <!-- TheMovieDb preference: classification labels / values (not translatable) -->
+    <string name="preference_classification_label_popularity">by popularity</string>
+    <string name="preference_classification_label_rating">by rating</string>
+    <string name="preference_classification_label_favorites">your favorites</string>
+
+    <string name="preference_classification_value_popularity" translatable="false">most_popular</string>
+    <string name="preference_classification_value_rating" translatable="false">top_rated</string>
+    <string name="preference_classification_value_favorites" translatable="false">favorites</string>
+
+    <!-- SharedPreferences preference: keys and labels -->
+    <string name="preference_classification_key" translatable="false">classification</string>
+    <string name="preference_classification_label" translatable="false">Classification</string>
+
+</resources>

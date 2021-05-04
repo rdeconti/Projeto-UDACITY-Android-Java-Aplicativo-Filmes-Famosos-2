@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+
+        android:id="@+id/activity_detail_movie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Movie Name -->
+        <TextView
+            style="@style/DetailLabel"
+            android:id="@+id/tv_label_name"
+            android:text="@string/label_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            style="@style/DetailText"
+            android:id="@+id/tv_movie_name"
+            android:layout_below="@id/tv_label_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- Movie poster -->
+        <RelativeLayout
+
+            android:id="@+id/container"
+            android:layout_below="@id/tv_movie_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_backdrop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/moviePosterMargin"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:contentDescription="@string/content_description_image_poster" />
+
+        </RelativeLayout>
+
+        <!-- Movie rating -->
+        <TextView
+            style="@style/DetailLabel"
+            android:layout_below="@id/container"
+            android:id="@+id/tv_label_rating"
+            android:text="@string/label_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            style="@style/DetailText"
+            android:id="@+id/tv_rating"
+            android:layout_below="@id/tv_label_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- Movie release date -->
+        <TextView
+            style="@style/DetailLabel"
+            android:layout_below="@id/tv_rating"
+            android:id="@+id/tv_label_release_date"
+            android:text="@string/label_release_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            style="@style/DetailText"
+            android:id="@+id/tv_release_date"
+            android:layout_below="@id/tv_label_release_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Movie overview -->
+        <TextView
+            style="@style/DetailLabel"
+            android:layout_below="@id/tv_release_date"
+            android:id="@+id/tv_label_overview"
+            android:text="@string/label_summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            style="@style/DetailText"
+            android:id="@+id/tv_overview"
+            android:layout_below="@+id/tv_label_overview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Movie trailers -->
+        <TextView
+            style="@style/DetailLabel"
+            android:layout_below="@id/tv_overview"
+            android:id="@+id/tv_trailers"
+            android:text="@string/label_trailers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <android.support.v7.widget.RecyclerView
+            style="@style/DetailText"
+            android:id="@+id/rv_trailers"
+            android:layout_below="@id/tv_trailers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+
+        <TextView
+            style="@style/DetailText"
+            android:id="@+id/empty_trailers"
+            android:layout_below="@id/rv_trailers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/msg_without_trailers"
+            android:visibility="gone" />
+
+        <View
+            style="@style/DetailText"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/tv_trailers" />
+
+        <!-- Movie reviews -->
+        <TextView
+            style="@style/DetailLabel"
+            android:layout_below="@id/empty_trailers"
+            android:id="@+id/tv_reviews"
+            android:text="@string/label_reviews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <View
+            style="@style/DetailText"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/tv_reviews"/>
+
+        <android.support.v7.widget.RecyclerView
+            style="@style/DetailText"
+            android:id="@+id/rv_reviews"
+            android:layout_below="@id/tv_reviews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+
+        <TextView
+            style="@style/DetailText"
+            android:id="@+id/empty_review"
+            android:layout_below="@id/rv_reviews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/msg_without_reviews"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</ScrollView>
+

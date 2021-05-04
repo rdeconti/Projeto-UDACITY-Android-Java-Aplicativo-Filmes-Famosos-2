@@ -1,0 +1,47 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:itemBackground">@color/windowBackground</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <!-- Preference theme -->
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:itemBackground">@color/windowBackground</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="DetailText">
+        <item name="android:layout_marginLeft">@dimen/textLabelMargin</item>
+        <item name="android:layout_marginRight">@dimen/textLabelMargin</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:padding">@dimen/textLabelPadding</item>
+        <item name="android:textSize">@dimen/textLabelTextSize</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:textColor">@color/textLabelTextColor</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="DetailLabel">
+        <item name="android:layout_marginLeft">@dimen/detailLabelMargin</item>
+        <item name="android:layout_marginRight">@dimen/detailLabelMargin</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:padding">@dimen/detailLabelPadding</item>
+        <item name="android:textSize">@dimen/detailLabelTextSize</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:textColor">@color/detailLabelTextColor</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Preferred movie classification labels (label ordering must match values) -->
+    <array name="preference_movie_classification_option_labels">
+        <item>@string/preference_classification_label_popularity</item>     <!-- by popularity -->
+        <item>@string/preference_classification_label_rating</item>         <!-- by rating -->
+        <item>@string/preference_classification_label_favorites</item>      <!-- your favorites -->
+    </array>
+
+    <!-- Preferred movie classification values (label ordering must match values) -->
+    <array name="preference_movie_classification_option_values">
+        <item>@string/preference_classification_value_popularity</item>     <!-- popular -->
+        <item>@string/preference_classification_value_rating</item>         <!-- top_rated -->
+        <item>@string/preference_classification_value_favorites</item>      <!-- favorites -->
+    </array>
+
+</resources>

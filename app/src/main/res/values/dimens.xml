@@ -1,0 +1,13 @@
+<resources>
+
+    <dimen name="detailLabelMargin">5dp</dimen>
+    <dimen name="detailLabelPadding">5dp</dimen>
+    <dimen name="detailLabelTextSize">15sp</dimen>
+
+    <dimen name="textLabelMargin">5dp</dimen>
+    <dimen name="textLabelPadding">5dp</dimen>
+    <dimen name="textLabelTextSize">15sp</dimen>
+    
+    <dimen name="moviePosterMargin">9dp</dimen>
+
+</resources>
